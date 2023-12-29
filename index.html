@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form task 1</title>
+	<style>
+	.label{
+	float:left;
+	width:8%;
+	}
+	
+	
+	</style>
+</head>
+<body>
+	<h1>Novell Services Login</h1>
+	<form>
+		<div>
+			<label for="userid" class="label"> Username:</label>
+			<input type="text" id="userid">
+		</div>
+		<div style="padding-top:5px">
+			<label for="pwd" class="label">Password:</label>
+			<input type="password" id="pwd">
+		</div>
+		<br>
+		<div>
+			<label for="city" class="label">City of Employment:</label>
+			<input type="text" id="city" >
+		</div>
+		<br>
+		<div>
+			<label for="server" class="label">Web server:</label>
+			<select id="server">
+			<option value="" disabled selected>--Choose a server--</option>
+			<option value="AWS">AWS</option>
+			<option value="Go-daddy">Go-daddy</option>
+			<option value="Hostinger">Hostinger</option>
+			</select>
+		</div>
+		<br>
+		<br>
+		<label for="role" class="label" style="padding-bottom:30px; padding-top:20px;">Please specify your role:</label>
+		
+		<div>
+		
+			<input  type="radio" name="role" value="Admin">
+			<label  for="role">Admin</label><br>
+			<input  type="radio" name="role" value="Engineer">
+			<label for="role">Engineer</label><br>
+			<input  type="radio" name="role" value="Manager">
+			<label for="role">Manager</label><br>
+			<input type="radio" name="role" value="Guest">
+			<label for="role">Guest</label>
+		</div>
+		<br>
+		<br>
+		<div>
+		<label for="select" class="label" style="padding-bottom:30px; padding-top:10px;">Single Sign-on to the following:</label>
+		<input type="checkbox" id="option1" value="Mail">
+		<label for="option1">Mail</label><br>
+		<input type="checkbox" id="option2" value="Payroll">
+		<label  for="option2">Payroll</label><br>
+		<input type="checkbox" id="option3" value="Self-service">
+		<label  for="option3">Self-service</label>
+		</div>
+		<br>
+		<div style="padding-left:110px">
+		<input type="button" value="Login">
+		<input type="reset">
+		</div>
+	</form>
+</body>
+</html>
